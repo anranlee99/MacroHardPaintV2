@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>MacroHard Paint V2</h1>
+      <canvas id="webgl" width="400" height="400"></canvas>
+      <p>
+
+        Red:<input type="range" min="0" max="100" value="50" id="redSlider"/> <br>
+        Green:<input type="range" min="0" max="100" value="50" id="greenSlider"/> <br>
+        Blue:<input type="range" min="0" max="100" value="50" id="blueSlider"/> <br>
+        Alpha:<input type="range" min="0" max="100" value="100" id="alphaSlider"/> <br>
+        Brush Size:<input type="range" min="1" max="100" value="1" id="brushSize"/> <br>
+        Brush Type:
+        <select id="brushType">
+          <option value="1">Square</option>
+          <option value="2">Triangle</option>
+          <option value="3">N-Gon (it's not a circle)</option>
+        </select>
+        <br>
+        Segments:<input type="number" min="3" max="100" value="3" id="segmentSlider"/> <br>
+        <div>
+          <button id="clearButton">Clear</button>
+          <button id="undoButton">Undo</button>
+          <button id="redoButton">Redo</button>
+          <button id="exportButton">Export</button>
+        </div>
+      </p>
+        
+
+      <footer>
+        <p>
+          Check out MacroHard Paint V1 <a href="https://anranlee99.github.io/cmpm-121-demo-2/">here</a>.
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+  
+</html>
